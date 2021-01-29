@@ -12,6 +12,15 @@ let package = Package(
     products: [
         .library(
             name: "AFNetworking",
+            type: .static,
+            targets: [
+                "AFNetworking",
+                "AFNetworkingiOS",
+            ]
+        ),
+        .library(
+            name: "AFNetworking",
+            type: .dynamic,
             targets: [
                 "AFNetworking",
                 "AFNetworkingiOS",
